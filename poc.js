@@ -1,5 +1,8 @@
 function redirectToApp() {
 
-    alert('Testing....!');
+    // alert('Testing....!');
 
+    window.location = 'visible://dummyparam';
+
+    
 }
