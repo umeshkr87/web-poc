@@ -9,18 +9,24 @@
         <h1>Open iOS APP</h1>
 
         
-        <form action="visible://dummyparam">
+        <!-- <form action="visible://dummyparam">
             <input id='submit-id' type="submit" value="Go to Visible">
-        </form>
+        </form> -->
 
         
 
         <script type="text/javascript" charset="utf-8" src="poc.js"></script>
-        <button onclick="redirectToApp()"></button>
+        <button id="button-id"onclick="redirectToApp()">Continue to Visble App</button>
 
 
         <style>
             #submit-id {
+                margin-left: 10%;
+                height:50px;
+                width:100px;
+            }
+
+            #button-id {
                 margin-left: 10%;
                 height:50px;
                 width:100px;
