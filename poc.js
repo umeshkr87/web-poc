@@ -1,4 +1,5 @@
-function test() {
+function redirectToApp() {
 
-    
+    alert('Testing....!');
+
 }
