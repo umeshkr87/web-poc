@@ -15,8 +15,18 @@
 
 
         <script type="text/javascript" charset="utf-8"> 
-            window.location = "visible://dummyparam";
+            // window.location = "visible://dummyparam";
+
+            var frame = document.createElement('iframe');
+            frame.src = 'visible://dummyparam';
+            frame.style.display = 'none';
+            document.body.appendChild(frame);
+
+            // the following is optional, just to avoid an unnecessary iframe on the page
+            setTimeout(function() { document.body.removeChild(frame); }, 4);
         </script>
+
+
             
     </body>
 </html>
