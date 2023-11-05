@@ -8,10 +8,10 @@ function redirectToApp() {
     // alert(navigator.userAgentData.platform);
 
     const iOS = navigator.userAgentData.platform === 'iOS';
-    if (!iOS) {
-        console.log("Not an iOS platform");
-        return;
-    }
+    // if (!iOS) {
+    //     console.log("Not an iOS platform");
+    //     return;
+    // }
         
 
     // if (iOS) {
