@@ -7,7 +7,7 @@ function redirectToApp() {
     // const iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
     // alert(navigator.userAgentData.platform);
 
-    const iOS = navigator.userAgentData.platform === 'iOS';
+    // const iOS = navigator.userAgentData.platform === 'iOS';
     // if (!iOS) {
     //     console.log("Not an iOS platform");
     //     return;
