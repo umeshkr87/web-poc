@@ -24,7 +24,7 @@ function redirectToApp() {
     // }
 
 
-    Another way 
+    // Another way 
     (function() {
         var app = {
           launchApp: function() {
