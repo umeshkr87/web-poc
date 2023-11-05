@@ -2,13 +2,39 @@ function redirectToApp() {
 
     // alert('Testing....!');
 
-    window.location = 'visible://dummyparam';
+    // window.location = 'visible://dummyparam';
 
     // const iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+    // alert(navigator.userAgentData.platform);
 
+    // const iOS = navigator.userAgentData.platform === 'iOS';
     // if (iOS) {
-    // // Just replace `https://` with `itms://` on your app's AppStore link.
-    // window.location.href = "itms://itunes.apple.com/us/app/google-maps-transit-food/id585027354?mt=8";
+    
+    //     window.location = 'visible://dummyparam';
+    //     window.location.href = "https://apps.apple.com/us/app/visible-mobile/id1367950045?ls=1";
+    // }
+    // else {
+    //     alert('Non iOS platform detected');
     // }
 
+
+
+    (function() {
+        var app = {
+          launchApp: function() {
+            window.location.replace("visible://dummyparam");
+            this.timer = setTimeout(this.openWebApp, 1000);
+          },
+      
+          openWebApp: function() {
+            window.location.replace("https://apps.apple.com/us/app/visible-mobile/id1367950045?ls=1");
+          }
+        };
+      
+        app.launchApp();
+      })();
+
+      
 }
+
+
