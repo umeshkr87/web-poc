@@ -2,7 +2,7 @@ function redirectToApp() {
 
     // alert('Testing....!');
 
-    window.location = 'visible://dummyparam';
+    // window.location = 'visible://dummyparam';
 
     // const iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
     // alert(navigator.userAgentData.platform);
@@ -10,7 +10,8 @@ function redirectToApp() {
     const iOS = navigator.userAgentData.platform === 'iOS';
     if (!iOS) {
         console.log("Not an iOS platform");
-        return;
+        alert.log("Not an iOS platform");
+        // return;
     }
         
 
