@@ -7,7 +7,7 @@ function redirectToApp() {
     // const iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
     // alert(navigator.userAgentData.platform);
 
-    // const iOS = navigator.userAgentData.platform === 'iOS';
+    const iOS = navigator.userAgentData.platform === 'iOS';
     // if (!iOS) {
     //     console.log("Not an iOS platform");
     //     alert.log("Not an iOS platform");
@@ -15,31 +15,31 @@ function redirectToApp() {
     // }
         
 
-    // if (iOS) {
+    if (iOS) {
     
-    //     window.location = 'visible://dummyparam';
-    //     window.location.href = "https://apps.apple.com/us/app/visible-mobile/id1367950045?ls=1";
-    // }
-    // else {
-    //     alert('Non iOS platform detected');
-    // }
+        window.location = 'visible://home';
+        // window.location.href = "https://apps.apple.com/us/app/visible-mobile/id1367950045?ls=1";
+    }
+    else {
+        alert('Non iOS platform detected');
+    }
 
 
     // Another way 
-    (function() {
-        var app = {
-          launchApp: function() {
-            window.location.replace("visible://dummyparam");
-            this.timer = setTimeout(this.openAppStore, 1000);
-          },
+    // (function() {
+    //     var app = {
+    //       launchApp: function() {
+    //         window.location.replace("visible://dummyparam");
+    //         this.timer = setTimeout(this.openAppStore, 1000);
+    //       },
       
-          openAppStore: function() {
-            window.location.replace("https://apps.apple.com/us/app/visible-mobile/id1367950045?ls=1");
-          }
-        };
+    //       openAppStore: function() {
+    //         window.location.replace("https://apps.apple.com/us/app/visible-mobile/id1367950045?ls=1");
+    //       }
+    //     };
       
-        app.launchApp();
-      })();
+    //     app.launchApp();
+    //   })();
 
 
     //   var redirect = function (location) {
