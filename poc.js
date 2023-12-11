@@ -18,7 +18,7 @@ function redirectToApp() {
     // if (iOS) {
     
         // location.href = 'visible://home';
-        location.href = 'google.com';
+        location.href = 'https://google.com';
         // window.location.href = "https://apps.apple.com/us/app/visible-mobile/id1367950045?ls=1";
     // }
     // else {
