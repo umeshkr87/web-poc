@@ -15,14 +15,14 @@ function redirectToApp() {
     // }
         
 
-    if (iOS) {
+    // if (iOS) {
     
-        window.location = 'visible://home';
+        window.location.href = 'visible://home';
         // window.location.href = "https://apps.apple.com/us/app/visible-mobile/id1367950045?ls=1";
-    }
-    else {
+    // }
+    // else {
         alert('Non iOS platform detected');
-    }
+    // }
 
 
     // Another way 
